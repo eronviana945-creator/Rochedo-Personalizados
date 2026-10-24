@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Canecas Personalizadas | Rochedo Personalizados</title>
+
+    <meta name="description"
+        content="Canecas personalizadas a partir de 12 unidades. Personalize com fotos, nomes, frases, logotipos ou sua própria arte. Solicite seu orçamento pelo WhatsApp.">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Rochedo Personalizados">
+
+    <link rel="canonical" href="https://www.rochedopersonalizado.com.br/">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #202020;
+            background: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            width: 92%;
+            max-width: 1180px;
+            margin: auto;
+        }
+
+        /* CABEÇALHO */
+
+        header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.97);
+            border-bottom: 1px solid #eeeeee;
+            backdrop-filter: blur(10px);
+        }
+
+        .header {
+            min-height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.7px;
+        }
+
+        .logo span {
+            color: #c77700;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .menu a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333333;
+        }
+
+        .menu a:hover {
+            color: #c77700;
+        }
+
+        .menu-button {
+            background: #c77700;
+            color: #ffffff !important;
+            padding: 11px 18px;
+            border-radius: 7px;
+        }
+
+        /* DESTAQUE PRINCIPAL */
+
+        .hero {
+            padding: 110px 0 100px;
+            background:
+                radial-gradient(
+                    circle at 90% 10%,
+                    #fff0d8,
+                    transparent 35%
+                ),
+                linear-gradient(
+                    135deg,
+                    #fffaf3,
+                    #ffffff
+                );
+        }
+
+        .hero-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #191919;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 {
+            font-size: clamp(42px, 6vw, 70px);
+            line-height: 1.02;
+            letter-spacing: -2.5px;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #c77700;
+        }
+
+        .hero-description {
+            max-width: 720px;
+            margin: 0 auto 34px;
+            color: #5d5d5d;
+            font-size: 19px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            transition: 0.2s;
+        }
+
+        .button-primary {
+            background: #c77700;
+            color: #ffffff;
+        }
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-outline {
+            border: 1px solid #222222;
+            color: #222222;
+        }
+
+        .button-outline:hover {
+            background: #222222;
+            color: #ffffff;
+        }
+
+        /* BENEFÍCIOS */
+
+        .trust {
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 30px 0;
+        }
+
+        .trust-item {
+            text-align: center;
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 17px;
+        }
+
+        .trust-item span {
+            color: #777777;
+            font-size: 13px;
+        }
+
+        /* SEÇÕES */
+
+        section {
+            padding: 90px 0;
+        }
+
+        .section-header {
+            max-width: 760px;
+            margin: 0 auto 50px;
+            text-align: center;
+        }
+
+        .section-header h2 {
+            font-size: clamp(31px, 4vw, 44px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .section-header p {
+            color: #666666;
+        }
+
+        /* CANECAS */
+
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+
+        .category {
+            border: 1px solid #eeeeee;
+            border-radius: 18px;
+            padding: 30px;
+            background: #ffffff;
+            transition: 0.2s;
+        }
+
+        .category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+        }
+
+        .category-icon {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            background: #fff1dc;
+            color: #c77700;
+            font-size: 23px;
+            margin-bottom: 20px;
+        }
+
+        .category h3 {
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .category p {
+            color: #666666;
+            font-size: 15px;
+        }
+
+        /* PERSONALIZAÇÃO */
+
+        .personalize {
+            background: #fafafa;
+        }
+
+        .personalize-content {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .personalize h2 {
+            font-size: clamp(32px, 4vw, 44px);
+            line-height: 1.1;
+            margin-bottom: 18px;
+        }
+
+        .personalize p {
+            max-width: 700px;
+            margin: 0 auto 35px;
+            color: #666666;
+        }
+
+        .check-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .check-list li {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            padding: 10px 17px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .check-list li::before {
+            content: "✓";
+            color: #c77700;
+            font-weight: 900;
+            margin-right: 7px;
+        }
+
+        /* PÚBLICOS */
+
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .audience {
+            padding: 27px 18px;
+            border: 1px solid #eeeeee;
+            border-radius: 14px;
+            text-align: center;
+            transition: 0.2s;
+        }
+
+        .audience:hover {
+            transform: translateY(-3px);
+            border-color: #dddddd;
+        }
+
+        .audience h3 {
+            font-size: 17px;
+        }
+
+        .audience p {
+            color: #777777;
+            font-size: 13px;
+            margin-top: 5px;
+        }
+
+        /* ATACADO */
+
+        .wholesale {
+            background: #191919;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .wholesale h2 {
+            max-width: 850px;
+            margin: auto;
+            font-size: clamp(32px, 4vw, 50px);
+            line-height: 1.08;
+            margin-bottom: 18px;
+        }
+
+        .wholesale p {
+            max-width: 720px;
+            margin: 0 auto 30px;
+            color: #cccccc;
+        }
+
+        /* PROCESSO */
+
+        .process {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+        }
+
+        .step {
+            text-align: center;
+        }
+
+        .step-number {
+            width: 52px;
+            height: 52px;
+            margin: 0 auto 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #c77700;
+            color: #ffffff;
+            font-weight: 800;
+        }
+
+        .step h3 {
+            font-size: 17px;
+            margin-bottom: 7px;
+        }
+
+        .step p {
+            font-size: 14px;
+            color: #777777;
+        }
+
+        /* PRAZO */
+
+        .deadline {
+            background: #fff8ed;
+        }
+
+        .deadline-box {
+            max-width: 850px;
+            margin: auto;
+            padding: 45px 30px;
+            border-radius: 20px;
+            background: #ffffff;
+            border: 1px solid #f0dfc7;
+            text-align: center;
+        }
+
+        .deadline-box h2 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .deadline-box p {
+            color: #666666;
+        }
+
+        /* PERGUNTAS FREQUENTES */
+
+        .faq {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        details {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 20px 0;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        details p {
+            color: #666666;
+            margin-top: 12px;
+        }
+
+        /* CHAMADA FINAL */
+
+        .cta {
+            background: linear-gradient(135deg, #c77800, #9f5f00);
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .cta h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            line-height: 1.1;
+            margin-bottom: 15px;
+        }
+
+        .cta p {
+            max-width: 650px;
+            margin: 0 auto 28px;
+            color: #fff4e6;
+        }
+
+        .cta .button {
+            background: #ffffff;
+            color: #222222;
+        }
+
+        /* RODAPÉ */
+
+        footer {
+            background: #111111;
+            color: #ffffff;
+            padding: 60px 0 25px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 50px;
+            margin-bottom: 45px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer a {
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        footer a {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        footer a:hover {
+            color: #ffffff;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #2d2d2d;
+            padding-top: 20px;
+            text-align: center;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        /* WHATSAPP */
+
+        .whatsapp {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background: #25D366;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 25px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            z-index: 2000;
+        }
+
+        /* RESPONSIVO */
+
+        @media (max-width: 900px) {
+            .menu {
+                display: none;
+            }
+
+            .trust-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .audience-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .process {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 70px 0;
+            }
+
+            section {
+                padding: 65px 0;
+            }
+
+            .hero h1 {
+                letter-spacing: -1px;
+            }
+
+            .hero-description {
+                font-size: 17px;
+            }
+
+            .trust-grid,
+            .categories,
+            .audience-grid,
+            .process,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                gap: 30px;
+            }
+
+            .check-list {
+                gap: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+
+    <header>
+        <div class="container header">
+
+            <a href="#inicio" class="logo">
+                Rochedo <span>Personalizados</span>
+            </a>
+
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#canecas">Canecas</a>
+                <a href="#personalizacao">Personalização</a>
+                <a href="#publicos">Para quem</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#faq">Dúvidas</a>
+
+                <a href="https://wa.me/5511916069218"
+                   target="_blank"
+                   class="menu-button">
+                    Orçamento
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- DESTAQUE PRINCIPAL -->
+
+        <section class="hero" id="inicio">
+            <div class="container">
+                <div class="hero-content">
+
+                    <span class="tag">
+                        PEDIDOS A PARTIR DE 12 UNIDADES
+                    </span>
+
+                    <h1>
+                        Canecas
+                        <span>Personalizadas</span>
+                        para todos os momentos.
+                    </h1>
+
+                    <p class="hero-description">
+                        Personalize suas canecas com fotos,
+                        nomes, frases, logotipos ou sua própria arte.
+                        Uma opção para presentes, empresas, eventos,
+                        grupos e muitas outras ocasiões.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="https://wa.me/5511916069218"
+                           target="_blank"
+                           class="button button-primary">
+                            Solicitar orçamento
+                        </a>
+
+                        <a href="#canecas"
+                           class="button button-outline">
+                            Conhecer as opções
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- BENEFÍCIOS -->
+
+        <section class="trust">
+            <div class="container trust-grid">
+
+                <div class="trust-item">
+                    <strong>A partir de 12 unidades</strong>
+                    <span>Pedido mínimo</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Personalização</strong>
+                    <span>Sua arte, foto ou ideia</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Até 7 dias úteis</strong>
+                    <span>Prazo de produção</span>
+                </div>
+
+                <div class="trust-item">
+                    <strong>Atendimento direto</strong>
+                    <span>Pelo WhatsApp</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- TIPOS DE PERSONALIZAÇÃO -->
+
+        <section id="canecas">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Canecas Personalizadas</h2>
+                    <p>
+                        Crie uma caneca de acordo com
+                        sua necessidade e ocasião.
+                    </p>
+                </div>
+
+                <div class="categories">
+
+                    <article class="category">
+                        <div class="category-icon">♡</div>
+                        <h3>Canecas com Fotos</h3>
+                        <p>
+                            Personalize com fotos de pessoas,
+                            momentos especiais, família,
+                            amigos ou qualquer imagem.
+                        </p>
+                    </article>
+
+                    <article class="category">
+                        <div class="category-icon">A</div>
+                        <h3>Nomes e Frases</h3>
+                        <p>
+                            Escolha um nome, frase,
+                            mensagem ou data especial
+                            para criar sua personalização.
+                        </p>
+                    </article>
+
+                    <article class="category">
+                        <div class="category-icon">◈</div>
+                        <h3>Empresas</h3>
+                        <p>
+                            Canecas personalizadas com
+                            logotipo, marca e identidade
+                            visual da empresa.
+                        </p>
+                    </article>
+
+                    <article class="category">
+                        <div class="category-icon">★</div>
+                        <h3>Eventos</h3>
+                        <p>
+                            Lembranças personalizadas
+                            para festas, comemorações
+                            e eventos especiais.
+                        </p>
+                    </article>
+
+                    <article class="category">
+                        <div class="category-icon">+</div>
+                        <h3>Grupos</h3>
+                        <p>
+                            Ideal para famílias, turmas,
+                            equipes, amigos e diferentes
+                            tipos de grupos.
+                        </p>
+                    </article>
+
+                    <article class="category">
+                        <div class="category-icon">✦</div>
+                        <h3>Sua Própria Arte</h3>
+                        <p>
+                            Você pode enviar sua própria
+                            arte e transformar sua ideia
+                            em uma caneca personalizada.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PERSONALIZAÇÃO -->
+
+        <section class="personalize" id="personalizacao">
+            <div class="container">
+                <div class="personalize-content">
+
+                    <h2>Sua ideia. Sua arte. Sua caneca.</h2>
+
+                    <p>
+                        A personalização pode ser feita
+                        de acordo com aquilo que você deseja.
+                        Envie sua referência e explique sua ideia.
+                    </p>
+
+                    <ul class="check-list">
+                        <li>Fotos</li>
+                        <li>Nomes</li>
+                        <li>Frases</li>
+                        <li>Logotipos</li>
+                        <li>Datas</li>
+                        <li>Artes próprias</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PÚBLICOS -->
+
+        <section id="publicos">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Para quem são as canecas?</h2>
+                    <p>
+                        Canecas personalizadas podem ser
+                        utilizadas em diferentes situações.
+                    </p>
+                </div>
+
+                <div class="audience-grid">
+
+                    <div class="audience">
+                        <h3>Presentes</h3>
+                        <p>Momentos especiais</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Aniversários</h3>
+                        <p>Lembranças personalizadas</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Casamentos</h3>
+                        <p>Lembranças para convidados</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Formaturas</h3>
+                        <p>Turmas e formandos</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Igrejas</h3>
+                        <p>Congressos e departamentos</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Empresas</h3>
+                        <p>Brindes e ações</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Famílias</h3>
+                        <p>Momentos em grupo</p>
+                    </div>
+
+                    <div class="audience">
+                        <h3>Revendedores</h3>
+                        <p>Compras em quantidade</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ATACADO -->
+
+        <section class="wholesale">
+            <div class="container">
+
+                <h2>
+                    Canecas Personalizadas
+                    a partir de 12 unidades
+                </h2>
+
+                <p>
+                    Precisa de várias unidades para sua empresa,
+                    evento, igreja, grupo, presente ou revenda?
+
+                    Solicite um orçamento diretamente pelo WhatsApp.
+                </p>
+
+                <a href="https://wa.me/5511916069218"
+                   target="_blank"
+                   class="button button-primary">
+                    Solicitar orçamento
+                </a>
+
+            </div>
+        </section>
+
+        <!-- COMO FUNCIONA -->
+
+        <section id="como-funciona">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Como funciona?</h2>
+                    <p>
+                        Um processo simples para
+                        realizar seu pedido.
+                    </p>
+                </div>
+
+                <div class="process">
+
+                    <div class="step">
+                        <div class="step-number">01</div>
+                        <h3>Entre em contato</h3>
+                        <p>
+                            Informe a quantidade
+                            desejada e sua ideia.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">02</div>
+                        <h3>Envie sua arte</h3>
+                        <p>
+                            Envie foto, logotipo,
+                            frase ou imagem.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">03</div>
+                        <h3>Aprove</h3>
+                        <p>
+                            Confira os detalhes
+                            antes da produção.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">04</div>
+                        <h3>Produção</h3>
+                        <p>
+                            Após aprovação,
+                            iniciamos a produção.
+                        </p>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">05</div>
+                        <h3>Receba</h3>
+                        <p>
+                            Seu pedido é preparado
+                            para envio ou entrega.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PRAZO -->
+
+        <section class="deadline">
+            <div class="container">
+                <div class="deadline-box">
+
+                    <h2>Prazo de produção</h2>
+
+                    <p>
+                        O prazo de produção é de até
+                        <strong>7 dias úteis</strong>
+                        após a aprovação da arte
+                        e confirmação do pagamento.
+                    </p>
+
+                    <br>
+
+                    <p>
+                        Se o pedido for para uma data específica,
+                        recomendamos realizar a solicitação
+                        com antecedência.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PERGUNTAS FREQUENTES -->
+
+        <section id="faq">
+            <div class="container">
+
+                <div class="section-header">
+                    <h2>Perguntas frequentes</h2>
+                    <p>Confira algumas dúvidas comuns.</p>
+                </div>
+
+                <div class="faq">
+
+                    <details>
+                        <summary>Qual é a quantidade mínima?</summary>
+                        <p>
+                            Trabalhamos com pedidos
+                            a partir de 12 unidades.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Posso enviar minha própria arte?</summary>
+                        <p>
+                            Sim. Você pode enviar sua
+                            própria arte, foto, logotipo,
+                            nome ou frase.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Posso colocar fotos nas canecas?</summary>
+                        <p>
+                            Sim. A personalização pode
+                            utilizar fotos e outras imagens.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Vocês atendem empresas?</summary>
+                        <p>
+                            Sim. Podemos produzir canecas
+                            personalizadas para empresas,
+                            ações, brindes e equipes.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Vocês fazem pedidos para eventos?</summary>
+                        <p>
+                            Sim. Atendemos pedidos para
+                            aniversários, casamentos,
+                            formaturas, igrejas e outros eventos.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Qual é o prazo de produção?</summary>
+                        <p>
+                            O prazo é de até 7 dias úteis
+                            após aprovação da arte e
+                            confirmação do pagamento.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>Como faço para pedir um orçamento?</summary>
+                        <p>
+                            Clique em qualquer botão de orçamento
+                            ou entre em contato pelo WhatsApp
+                            e informe a quantidade desejada.
+                        </p>
+                    </details>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CHAMADA FINAL -->
+
+        <section class="cta">
+            <div class="container">
+
+                <h2>Vamos criar suas canecas?</h2>
+
+                <p>
+                    Envie a quantidade que você precisa
+                    e conte para nós como deseja personalizar.
+                </p>
+
+                <a href="https://wa.me/5511916069218"
+                   target="_blank"
+                   class="button">
+                    Falar com a Rochedo
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div>
+                    <h3>Rochedo Personalizados</h3>
+
+                    <p>
+                        Canecas personalizadas para
+                        diferentes momentos, públicos
+                        e ocasiões.
+                    </p>
+
+                    <p style="margin-top:10px;">
+                        Pedidos a partir de 12 unidades.
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Navegação</h3>
+
+                    <a href="#inicio">Início</a>
+                    <a href="#canecas">Canecas</a>
+                    <a href="#personalizacao">Personalização</a>
+                    <a href="#publicos">Para quem</a>
+                    <a href="#como-funciona">Como funciona</a>
+                    <a href="#faq">Dúvidas</a>
+                </div>
+
+                <div>
+                    <h3>Atendimento</h3>
+
+                    <p>Rochedo Personalizados</p>
+
+                    <p>
+                        WhatsApp:
+                        (11) 91606-9218
+                    </p>
+
+                    <a href="https://wa.me/5511916069218"
+                       target="_blank">
+                        Falar pelo WhatsApp
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                © 2026 Rochedo Personalizados.
+                Todos os direitos reservados.
+
+                <br>
+
+                Canecas Personalizadas
+                a partir de 12 unidades.
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+
+    <a href="https://wa.me/5511916069218"
+       target="_blank"
+       class="whatsapp"
+       aria-label="Falar com a Rochedo Personalizados pelo WhatsApp">
+        ☎
+    </a>
+
+</body>
+</html>
